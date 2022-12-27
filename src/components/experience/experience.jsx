@@ -1,6 +1,6 @@
 import React from 'react'
 import './experience.css'
-import html from '../../assets/html.webp'
+import html from '../../assets/html.png'
 import CSS from '../../assets/CSS3_logo.svg.png'
 import Javascript from '../../assets/Javascript_Logo.png'
 import Bootstrap from '../../assets/Bootstrap_logo.svg.png'
