@@ -3,8 +3,25 @@ import './contact.css'
 import Whatsapp from '../../assets/WhatsApp.png'
 import Mail from '../../assets/Mail.png'
 import sticker from '../../assets/Group.png'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
-const contact = () => {
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_c9krp47', 'template_2654o93', form.current, 'ao3w_tPLF4KrdUp07')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset()
+  };
+
   return (
     <section id='contact'>
       
@@ -28,11 +45,11 @@ const contact = () => {
             <a href="https://wa.me/+2348160537130" target="_blank" >Let's chat</a>
           </article>
         </div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text"name='name' placeholder='Your Full Name' required/>
           <input type="email" name='email' placeholder='Your email address'  required/>
           <input type="text" name='subject' placeholder='Subject' required/>
-          <textarea rows="13" placeholder='Leave a Message' required></textarea>
+          <textarea rows="13" name='message' placeholder='Leave a Message' required></textarea>
           <button type='submit' className='btn btn-2 btn-4'>Send Message</button>
         </form>
       </div>
@@ -40,4 +57,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

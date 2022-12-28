@@ -55,18 +55,12 @@
     font-weight: 700;
 }
 
+
 @media screen and (max-width: 425px) {  
     .experience__container{
         border-radius: 0;
 
     }
-    .experience__container-image{
-        width: 5rem;
-        height: 5rem;
-    }
-
-}
-@media screen and (max-width: 375px) {  
     .experience__container-image{
         width: 4rem;
         height: 4rem;
