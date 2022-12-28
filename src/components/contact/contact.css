@@ -128,41 +128,45 @@ input::placeholder, textarea::placeholder{
     }
     }
 
-    @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
+    .sticker{
+        left: 1.7%;
+        top: -20%;
+    }
+    .contact__container{
+        gap: 4rem;  
+        padding: 3rem 5rem;         
+    }
+    
+    .contact__option{
+        padding: 2rem;
+        
+    }
+    #contact{
+        height: 115vh;
+    }
+    }
+    @media screen and (max-width: 720px) {
+        #contact{
+            height: 180vh;
+        }
         .sticker{
             left: 1.7%;
-            top: -20%;
+            top: -14%;
         }
         .contact__container{
-            gap: 4rem;  
-            padding: 3rem 5rem;         
+         flex-direction: column; 
         }
         
-        .contact__option{
-            padding: 2rem;
-            
         }
-        #contact{
-            height: 115vh;
-        }
-        }
-
-        @media screen and (max-width: 720px) {
-            #contact{
-                height: 180vh;
-            }
+        @media screen and (max-width: 430px) {
             .sticker{
-                left: 1.7%;
-                top: -14%;
+                display: none;
+             }
             }
-            .contact__container{
-             flex-direction: column; 
-            }
-            
-            }
-
-            @media screen and (max-width: 430px) {
-                .sticker{
-                    display: none;
-                 }
-                }
+    
+@media screen and (max-width: 390px) {
+    .contact__container{
+        padding: 2rem;         
+    }
+    }
