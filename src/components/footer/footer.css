@@ -87,3 +87,14 @@ transition: var(--transtion);
         height: 40px;
     }
 }
+
+@media screen and (max-width: 320px) {
+         .copy span{
+            font-size: 11.5px;
+         }
+
+         .copy img{
+            width: 30px;
+            height: 30px;
+         }
+    }

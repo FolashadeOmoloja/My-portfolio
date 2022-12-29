@@ -54,14 +54,20 @@ border-radius: 30px;
 
 .btn-2{
     color: var(--text-color);
-    margin-right: 20px;
-    background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
+    /* background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%); */
+
+
+    background: linear-gradient(to right, #2954A3 0%, #C961DE  48%, #2954A3 100%);
+    background-size: 200% auto;
+    transition: background 400ms ease-out;
     box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
     border-radius: 30px;
   }
 
   .btn-2:hover{
-   color: var(--color-bg);
+    color: var(--text-color-purple);
+    background-position: right center;
+    
 }
  /* ====================== Scroll-down =========================== */ 
 
@@ -184,11 +190,6 @@ border-radius: 30px;
 
 
 }
-@media screen and (max-width: 500px) {
-    .buttons{
-      font-size: 14px;
-    }
-}
 
 @media screen and (max-width: 500px) {
     .header__container__inner{
@@ -219,6 +220,11 @@ border-radius: 30px;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     font-size: 14px;
+    }
+
+    .btn-1{
+      margin-right: 0;
     }
 
     .btn-2{
