@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import './contact.css'
 import Whatsapp from '../../assets/WhatsApp.png'
 import Mail from '../../assets/Mail.png'
@@ -7,6 +9,9 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  useEffect(() =>{
+    AOS.init({ duration: 1000});
+ }, [])
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -27,8 +32,8 @@ const Contact = () => {
       
       <h5>Let's Talk!</h5>
       <h2>Contact Me</h2>
-      <img src={sticker} alt="" className='sticker' />
-      <div className="container contact__container">
+      <img src={sticker} alt="" className='sticker' data-aos="fade-left"/>
+      <div className="container contact__container" data-aos="fade-left">
         <div className="contact__options">
           <article className="contact__option first__contact__option">
           <div className="contact__icon">

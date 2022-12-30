@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import './about.css'
 import My_Image from '../../assets/Me.png'
 
 
-const about = () => {
+const About = () => {
+   useEffect(() =>{
+      AOS.init({ duration: 1000});
+   }, [])
   return (
     <section id='about' className='section'>
       <h5>Get to know</h5>
       <h2>About Me</h2>
-      <div className="container about__container">
+      <div className="container about__container" data-aos="fade-left">
       <div className="about__me">
          <img src= {My_Image} alt="" className="my__image" />
       </div>
@@ -29,4 +34,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About
