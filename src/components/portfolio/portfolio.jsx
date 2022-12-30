@@ -86,14 +86,14 @@ const Portfolio = () => {
           <div className="portfolio__img">
             <img src={img5} alt="" />
             <div className="overlay"></div>
-								<a href="rps-gameplay.netlify.app" className="overlay__link">
+								<a href="https://rps-gameplay.netlify.app" className="overlay__link">
                   <GiBinoculars/>
 								</a>
           </div>
           <h3>RPS-gameplay</h3>
           <div className='portfolio__buttons'>
           <a href="https://github.com/FolashadeOmoloja/rock_paper_scissors_game" className="btn btn-1 btn-6 btn-6a" target="_blank"><span>Github</span>  <BsGithub/></a>
-          <a href="rps-gameplay.netlify.app" className="btn btn-2 btn-6 btn-6b" target="_blank"><span>Live Demo </span><BsLink45Deg/></a>
+          <a href="https://rps-gameplay.netlify.app" className="btn btn-2 btn-6 btn-6b" target="_blank"><span>Live Demo </span><BsLink45Deg/></a>
           </div>
           <p>RPS-gameplay is a simple rock-paper-scissors game, built for recreational purposes and to Let off steam  <FaGrinWink/>! Technology used Html, CSS and Javascript</p>
         </article>
