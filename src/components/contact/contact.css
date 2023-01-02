@@ -154,7 +154,7 @@ input::placeholder, textarea::placeholder{
         }
         .sticker{
             left: 1.5%;
-            top: -18%;
+            top: -17%;
         }
         .contact__container{
          flex-direction: column; 

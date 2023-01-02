@@ -21,7 +21,7 @@ const Portfolio = () => {
     <section id='portfolio'>
       <h5>Recent Projects</h5>
       <h2>My Portfolio</h2>
-      <div className="portfolio__container" data-aos="fade-up">
+      <div className="portfolio__container" data-aos="fade-down">
         <article className='portfolio__item'>
           <div className="portfolio__img">
             <img src={img1} alt="" />
@@ -37,7 +37,7 @@ const Portfolio = () => {
           </div>
           <p>Notefily is a responsive functional web application built to help users store notes and create todo-lists, Technology used: Html, CSS, Javascript</p>
         </article>
-        <article className='portfolio__item middle'>
+        <article className='portfolio__item middle' data-aos="fade-down">
           <div className="portfolio__img">
             <img src={img2} alt="" />
             <div className="overlay"></div>
@@ -52,7 +52,7 @@ const Portfolio = () => {
           </div>
           <p>Readym is a website built to improve reading culture by creating easy accessibility to informative books online, Tecnology used: Html, CSS and Bootsrap  </p>
         </article>
-        <article className='portfolio__item'>
+        <article className='portfolio__item' data-aos="fade-down">
           <div className="portfolio__img">
             <img src={img3} alt="" />
             <div className="overlay"></div>
@@ -67,7 +67,7 @@ const Portfolio = () => {
           </div>
           <p>TourIt is a responsive functional website and blog built for keeping up with the latest travel updates and news, Technology used: ReactJs and CSS</p>
         </article>
-        <article className='portfolio__item'>
+        <article className='portfolio__item' data-aos="fade-down">
           <div className="portfolio__img">
             <img src={img4} alt="" />
             <div className="overlay"></div>
@@ -82,7 +82,7 @@ const Portfolio = () => {
           </div>
           <p>Eduford is a responsive website created as a landing page for a university containing vital imformation about the institute, Technology used: Html, CSS, Javascript </p>
         </article>
-        <article className='portfolio__item middle'>
+        <article className='portfolio__item middle' data-aos="fade-down">
           <div className="portfolio__img">
             <img src={img5} alt="" />
             <div className="overlay"></div>
@@ -97,7 +97,7 @@ const Portfolio = () => {
           </div>
           <p>RPS-gameplay is a simple rock-paper-scissors game, built for recreational purposes and to Let off steam  <FaGrinWink/>! Technology used Html, CSS and Javascript</p>
         </article>
-        <article className='portfolio__item'>
+        <article className='portfolio__item' data-aos="fade-down">
           <div className="portfolio__img">
             <img src={img6} alt="" />
             <div className="overlay"></div>

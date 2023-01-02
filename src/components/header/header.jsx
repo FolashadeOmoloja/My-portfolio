@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'; 
 import './header.css'
 import bitmoji from '../../assets/bitmoji1.png'
 import CTA from './CTA'
@@ -8,11 +8,11 @@ import HeaderSocials from './HeaderSocials'
 import {CgArrowLongRight} from 'react-icons/cg'
 
 const Header = () => {
-  useEffect(() =>{
-     AOS.init({ duration: 2000});
-  }, [])
+//   useEffect(() =>{
+//      AOS.init({ duration: 2000});
+//   }, [])
   return (
-   <header data-aos="fade-down">
+   <header>
     
     <div className="contanier header__container" id='home' >
        <div className="header__container__inner">

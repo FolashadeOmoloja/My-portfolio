@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+// import 'aos/dist/aos.css'; 
 import './experience.css'
 import html from '../../assets/html.png'
 import CSS from '../../assets/CSS3_logo.svg.png'
@@ -11,14 +11,14 @@ import Git from '../../assets/Git-Icon.png'
 import CV from '../../assets/Folashade_Omoloja_resume.pdf'
 
 const Experience = () => {
-  useEffect(() =>{
-    AOS.init({ duration: 1000});
- }, [])
+//   useEffect(() =>{
+//     AOS.init({ duration: 1000});
+//  }, [])
   return (
     <section id='skills'>
       <h5>What skills I have</h5>
       <h2>My Experience</h2>
-      <div className="container experience__container" data-aos="fade-right">
+      <div className="container experience__container" data-aos="fade-down">
         <div className="inner_experience_container">
         <div className="outer">
         <div className="experience__container-image">
