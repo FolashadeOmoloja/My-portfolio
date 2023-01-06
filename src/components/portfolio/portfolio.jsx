@@ -15,7 +15,8 @@ import {FaGrinWink} from 'react-icons/fa'
 
 const Portfolio = () => {
   useEffect(() =>{
-    AOS.init({ duration: 1000});
+    AOS.init({  duration: 1000 });
+    AOS.init({  disable: 'mobile'});
  }, [])
   return (
     <section id='portfolio'>
