@@ -8,6 +8,9 @@ import Javascript from '../../assets/Javascript_Logo.png'
 import Bootstrap from '../../assets/Bootstrap_logo.svg.png'
 import Reactt from '../../assets/React-icon.svg.png'
 import Git from '../../assets/Git-Icon.png'
+import tailwind from '../../assets/tailwind.png'
+import typescript from '../../assets/typescript.png'
+import Next from '../../assets/nextjs.svg'
 import CV from '../../assets/FOLASHADE_OMOLOJA.pdf'
 
 const Experience = () => {
@@ -47,10 +50,10 @@ const Experience = () => {
           <div className="outer">
             <div className="experience__container-image">
               <div className="experience__img" >
-              <img src={Bootstrap} alt="" />
+              <img src={typescript} alt="" />
               </div>
           </div>
-          <span>Bootsrap</span>
+          <span>Typescript</span>
           </div>
           <div className="outer">
              <div className="experience__container-image">
@@ -59,6 +62,22 @@ const Experience = () => {
                </div>
              </div>
              <span>React</span>
+          </div>
+          <div className="outer">
+             <div className="experience__container-image">
+               <div className="experience__img" >
+               <img src={Next} alt="" />
+               </div>
+             </div>
+             <span>Next.js</span>
+          </div>
+          <div className="outer">
+             <div className="experience__container-image">
+               <div className="experience__img" >
+               <img src={tailwind} alt="" />
+               </div>
+             </div>
+             <span>Tailwind CSS</span>
           </div>
           <div className="outer">
             <div className="experience__container-image">
