@@ -9,6 +9,7 @@ import img4 from '../../assets/Eduforo.png'
 import img5 from '../../assets/game.png'
 import img6 from '../../assets/signup.png'
 import {GiBinoculars} from 'react-icons/gi'
+import img7 from '../../assets/planet.PNG'
 import {BsGithub} from 'react-icons/bs'
 import {BsLink45Deg} from 'react-icons/bs'
 import {FaGrinWink} from 'react-icons/fa'
@@ -38,6 +39,21 @@ const Portfolio = () => {
           </div>
           <p>Notefily is a responsive functional web application built to help users store notes and create todo-lists, Technology used: Html, CSS, Javascript</p>
         </article>
+        <article className='portfolio__item' data-aos="fade-down">
+          <div className="portfolio__img">
+            <img src={img7} alt="" />
+            <div className="overlay"></div>
+								<a href="https://planetprotectors.netlify.app/home" className="overlay__link">
+                  <GiBinoculars/>
+								</a>
+          </div>
+          <h3>Planet Protectors</h3>
+          <div className='portfolio__buttons'>
+          <a href="https://github.com/FolashadeOmoloja/Planet-Protectors" className="btn btn-1 btn-6 btn-6a" target="_blank"><span>Github</span>  <BsGithub/></a>
+          <a href="https://planetprotectors.netlify.app/home" className="btn btn-2 btn-6 btn-6b" target="_blank"><span>Live Demo </span><BsLink45Deg/></a>
+          </div>
+          <p>A modern responsive web application for a capstone project, collaborating with a team of designers, data scientists, and project managers. Leveraged technologies such as React.js, Bootstrap, and React Table to create a user-friendly interface and enhance functionality. The application aimed to address the problem of plastic recycling and effectively reduce environmental pollution caused by plastic.</p>
+        </article>
         <article className='portfolio__item middle' data-aos="fade-down">
           <div className="portfolio__img">
             <img src={img2} alt="" />
@@ -52,21 +68,6 @@ const Portfolio = () => {
            <a href="https://readym.netlify.app/" className="btn btn-2 btn-6 btn-6b" target="_blank"><span>Live Demo </span><BsLink45Deg/></a>
           </div>
           <p>Readym is a website built to improve reading culture by creating easy accessibility to informative books online, Tecnology used: Html, CSS and Bootsrap  </p>
-        </article>
-        <article className='portfolio__item' data-aos="fade-down">
-          <div className="portfolio__img">
-            <img src={img3} alt="" />
-            <div className="overlay"></div>
-								<a href="#" className="overlay__link">
-                  <GiBinoculars/>
-								</a>
-          </div>
-          <h3>TourIt</h3>
-          <div className='portfolio__buttons'>
-          <a href="#" className="btn btn-1 btn-6 btn-6a" target="_blank"><span>Github</span>  <BsGithub/></a>
-          <a href="#" className="btn btn-2 btn-6 btn-6b" target="_blank"><span>Live Demo </span><BsLink45Deg/></a>
-          </div>
-          <p>TourIt is a responsive functional website and blog built for keeping up with the latest travel updates and news, Technology used: ReactJs and CSS</p>
         </article>
         <article className='portfolio__item' data-aos="fade-down">
           <div className="portfolio__img">

@@ -8,7 +8,7 @@ import Javascript from '../../assets/Javascript_Logo.png'
 import Bootstrap from '../../assets/Bootstrap_logo.svg.png'
 import Reactt from '../../assets/React-icon.svg.png'
 import Git from '../../assets/Git-Icon.png'
-import CV from '../../assets/Folashade_Omoloja_resume.pdf'
+import CV from '../../assets/FOLASHADE_OMOLOJA.pdf'
 
 const Experience = () => {
 //   useEffect(() =>{
