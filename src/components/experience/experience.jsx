@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos';
-// import 'aos/dist/aos.css'; 
+import React from 'react'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 import './experience.css'
 import html from '../../assets/html.png'
 import CSS from '../../assets/CSS3_logo.svg.png'
 import Javascript from '../../assets/Javascript_Logo.png'
-import Bootstrap from '../../assets/Bootstrap_logo.svg.png'
 import Reactt from '../../assets/React-icon.svg.png'
 import Git from '../../assets/Git-Icon.png'
 import tailwind from '../../assets/tailwind.png'
@@ -14,14 +13,11 @@ import Next from '../../assets/nextjs.svg'
 import CV from '../../assets/FOLASHADE_OMOLOJA.pdf'
 
 const Experience = () => {
-//   useEffect(() =>{
-//     AOS.init({ duration: 1000});
-//  }, [])
   return (
     <section id='skills'>
       <h5>What skills I have</h5>
       <h2>My Experience</h2>
-      <div className="container experience__container" data-aos="fade-down">
+      <div className="container experience__container " >
         <div className="inner_experience_container">
         <div className="outer">
         <div className="experience__container-image">

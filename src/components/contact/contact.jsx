@@ -1,17 +1,14 @@
-import React, { useEffect } from 'react'
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; 
+import React from 'react'
 import './contact.css'
 import Whatsapp from '../../assets/WhatsApp.png'
 import Mail from '../../assets/Mail.png'
 import sticker from '../../assets/Group.png'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 
 const Contact = () => {
-//   useEffect(() =>{
-//     AOS.init({ duration: 1000});
-//  }, [])
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -32,8 +29,13 @@ const Contact = () => {
       
       <h5>Let's Talk!</h5>
       <h2>Contact Me</h2>
-      <img src={sticker} alt="" className='sticker' data-aos="fade-down"/>
-      <div className="container contact__container" data-aos="fade-down">
+      <img src={sticker} alt="" className='sticker '  />
+      <motion.div className="container contact__container page-transition" 
+         variants={fadeIn('down', 0.4)}
+         initial='hidden'
+         whileInView={'show'}
+         viewport={{once: false,amount:0.2}}       
+      >
         <div className="contact__options">
           <article className="contact__option first__contact__option">
           <div className="contact__icon">
@@ -57,7 +59,7 @@ const Contact = () => {
           <textarea rows="13" name='message' placeholder='Leave a Message' required></textarea>
           <button type='submit' className='btn btn-2 btn-4'>Send Message</button>
         </form>
-      </div>
+      </motion.div>
     </section>
   )
 }

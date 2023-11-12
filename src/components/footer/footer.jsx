@@ -1,6 +1,3 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 import './footer.css'
 import {BiHomeHeart} from 'react-icons/bi'
 import {CgUserlane} from 'react-icons/cg'
@@ -13,12 +10,10 @@ import Gmail from '../../assets/Gmail.png'
 import space from '../../assets/Illustration.png'
 
 const Footer = () => {
-  useEffect(() =>{
-    AOS.init({ duration: 1000});
- }, [])
+
   return (
     <footer className='footer'>
-     <div className="container footer__container" data-aos="fade-down">
+     <div className="container footer__container" >
       <div className="footer__options">
         <a href="#home" className="footer__option">
         <BiHomeHeart/>

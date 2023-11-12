@@ -11,7 +11,7 @@ const About = () => {
     <section id='about' className='section'>
       <h5>Get to know</h5>
       <h2>About Me</h2>
-      <motion.div className="container about__container" 
+      <motion.div className="container about__container page-transition" 
          variants={fadeIn('down', 0.2)}
          initial='hidden'
          whileInView={'show'}

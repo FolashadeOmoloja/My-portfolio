@@ -69,7 +69,7 @@ const Portfolio = () => {
          initial='hidden'
          whileInView={'show'}
          viewport={{once: false,amount:0.2}}    
-      className="portfolio__container" >
+      className="portfolio__container page-transition" >
         {projects.map((project, index) => (
           <article           
           className={`portfolio__item ${index % 3 === 1 && 'middle'}`} key={index}>
