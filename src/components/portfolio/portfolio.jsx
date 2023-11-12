@@ -73,11 +73,7 @@ const Portfolio = () => {
       <div  
       className="portfolio__container " >
         {projects.map((project, index) => (
-          <motion.article   
-          variants={fadeIn('down', project.delay)}
-          initial='visible'
-          whileInView={'show'}
-          viewport={{once: false,amount:0.6}}           
+          <article           
           className={`portfolio__item ${index % 3 === 1 && 'middle'} `} key={index}>
             <div className="portfolio__img">
               <img src={project.image} alt="" />
@@ -92,7 +88,7 @@ const Portfolio = () => {
               <a href={project.liveDemoLink} className="btn btn-2 btn-6 btn-6b" target="_blank"><span>Live Demo </span><BsLink45Deg /></a>
             </div>
             <p>{project.description}</p>
-          </motion.article>
+          </article>
         ))}
       </div>
     </section>

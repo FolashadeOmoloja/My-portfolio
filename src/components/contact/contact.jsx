@@ -30,11 +30,7 @@ const Contact = () => {
       <h5>Let's Talk!</h5>
       <h2 className='contact-margin'>Contact Me</h2>
       <img src={sticker} alt="" className='sticker '  />
-      <motion.div className="container contact__container " 
-         variants={fadeIn('down', 0.4)}
-         initial='hidden'
-         whileInView={'show'}
-         viewport={{once: false,amount:0.6}}       
+      <div className="container contact__container "      
       >
         <div className="contact__options">
           <article className="contact__option first__contact__option">
@@ -59,7 +55,7 @@ const Contact = () => {
           <textarea rows="13" name='message' placeholder='Leave a Message' required></textarea>
           <button type='submit' className='btn btn-2 btn-4'>Send Message</button>
         </form>
-      </motion.div>
+      </div>
     </section>
   )
 }

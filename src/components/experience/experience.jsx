@@ -1,6 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import { fadeIn } from '../../variants'
 import './experience.css'
 import html from '../../assets/html.png'
 import CSS from '../../assets/CSS3_logo.svg.png'
