@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
 import './about.css'
 import My_Image from '../../assets/Me.png'
-import { motion } from 'framer-motion'
-import { fadeIn } from '../../variants'
+
 
 
 const About = () => {
@@ -11,10 +10,7 @@ const About = () => {
     <section id='about' className='section'>
       <h5>Get to know</h5>
       <h2>About Me</h2>
-      <motion.div className="container about__container page-transition" 
-         variants={fadeIn('down', 0.2)}
-         initial='hidden'
-         whileInView={'show'}
+      <div className="container about__container " 
          viewport={{once: false,amount:0.2}}    
       >
       <div className="about__me">
@@ -28,7 +24,7 @@ const About = () => {
             team player ready to contribute to your organization’s success.
          </p>
       </div>
-      </motion.div>
+      </div>
       </section>
   )
 }
