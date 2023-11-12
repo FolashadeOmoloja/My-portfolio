@@ -1,19 +1,22 @@
 import React, { useEffect } from 'react'
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; 
 import './about.css'
 import My_Image from '../../assets/Me.png'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
 
 
 const About = () => {
-   // useEffect(() =>{
-   //    AOS.init({ duration: 1000});
-   // }, [])
+
   return (
     <section id='about' className='section'>
       <h5>Get to know</h5>
       <h2>About Me</h2>
-      <div className="container about__container" data-aos="fade-down">
+      <motion.div className="container about__container" 
+         variants={fadeIn('down', 0.2)}
+         initial='hidden'
+         whileInView={'show'}
+         viewport={{once: false,amount:0.2}}    
+      >
       <div className="about__me">
          <img src= {My_Image} alt="" className="my__image" />
       </div>
@@ -25,7 +28,7 @@ const About = () => {
             team player ready to contribute to your organization’s success.
          </p>
       </div>
-      </div>
+      </motion.div>
       </section>
   )
 }
