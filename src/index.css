@@ -101,11 +101,20 @@ img {
 }
 
 /* ============================== Media Queries-Small ======================== */
+@media screen and (max-width: 800px) {
+body{
+    background-image: none;
+}
+}
 @media screen and (max-width: 600px) {
     .container{
         width: var(--container-width-sm)
     }
     section > h2{
         margin-top: 2rem;
+    }
+
+    .contact-margin{
+        margin-bottom: 2rem;
     }
 }

@@ -28,13 +28,13 @@ const Contact = () => {
     <section id='contact'>
       
       <h5>Let's Talk!</h5>
-      <h2>Contact Me</h2>
+      <h2 className='contact-margin'>Contact Me</h2>
       <img src={sticker} alt="" className='sticker '  />
-      <motion.div className="container contact__container page-transition" 
+      <motion.div className="container contact__container " 
          variants={fadeIn('down', 0.4)}
          initial='hidden'
          whileInView={'show'}
-         viewport={{once: false,amount:0.2}}       
+         viewport={{once: false,amount:0.6}}       
       >
         <div className="contact__options">
           <article className="contact__option first__contact__option">

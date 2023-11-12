@@ -169,6 +169,10 @@ border-radius: 30px;
 
 
   @media screen and (max-width:745px){
+    .header__container{
+      height: 80vh;
+  }
+  
     .header__container h2{
         font-size: 1.15rem;
     }
@@ -193,22 +197,18 @@ border-radius: 30px;
 
 @media screen and (max-width: 500px) {
     .header__container__inner{
-        margin-top: 80px;
+        margin-top: 50px;
       
     }
-
-    .inner__text{
-        background: rgba(47, 47, 138, 0.6);
-         border-radius: 10px;
-        padding: 10px 20px;
-    }
+.header__container{
+  text-align: center;
+}
     .header__container h2{
         font-size: 1rem;
         font-weight: 700;
     }
 
     .header__container h1{
-        color: var(--color-bg);
         font-weight: 700;
         font-size: 2rem;
     }
