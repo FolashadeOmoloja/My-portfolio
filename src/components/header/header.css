@@ -227,10 +227,10 @@ animation-delay: 2.2s;
 }
 
 .header__socials{
-  left: 10px
+  left: 20px
 }
   .header__container {
-    height: 80vh;
+    height: 50vh;
   }
   .header__container h1 {
     font-size: 2rem;
