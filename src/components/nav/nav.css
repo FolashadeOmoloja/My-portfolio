@@ -19,14 +19,35 @@
     background: transparent;
     padding: 0.9rem;
     display: flex;
+    justify-items: center;
+    align-items: center;
     border-radius: 50%;
+    position: relative;
+    transition: background 400ms ease-out;
 
+}
+.nav-span{
+    position: absolute;
+    top: -60px; 
+    left: -10px;
+    background: rgba(47, 47, 138, 0.6);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: none;
+    
 }
 
 .nav a:hover{
     color: #C961DE;
     background: rgba(0, 0, 0, 0.3);
     
+}
+
+.nav a:hover .nav-span{
+    display: block;
 }
 
 nav a.active{

@@ -21,9 +21,10 @@
     --playfair: 'Playfair Display', serif;
 
 }
-html{
-    scroll-behavior: smooth;
+html, body {
+  scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar{
     display: none;
 }
