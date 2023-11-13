@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact'>
+    <section id='contact' className='contact__main__container'>
       
       <h5>Let's Talk!</h5>
       <h2 className='contact-margin'>Contact Me</h2>

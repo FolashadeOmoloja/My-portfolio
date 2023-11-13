@@ -1,9 +1,8 @@
 import './footer.css'
 import {BiHomeHeart} from 'react-icons/bi'
 import {CgUserlane} from 'react-icons/cg'
-import {BiBookHeart} from 'react-icons/bi'
+import {BsPersonWorkspace, BsChatSquareDotsFill} from 'react-icons/bs'
 import {MdWork} from 'react-icons/md'
-import {BiMessageAltEdit} from 'react-icons/bi'
 import Linkedin from '../../assets/Linkedinn.png'
 import Github from '../../assets/GitHub.png'
 import Gmail from '../../assets/Gmail.png'
@@ -24,7 +23,7 @@ const Footer = () => {
           <span>About Me</span>
         </a>
         <a href="#skills" className="footer__option">
-        <BiBookHeart/>
+        <BsPersonWorkspace/>
           <span>My Experience</span>
         </a>
         <a href="#portfolio"className="footer__option">
@@ -32,7 +31,7 @@ const Footer = () => {
           <span>Portfolio</span>
         </a>
         <a href="#contact" className="footer__option">
-        <BiMessageAltEdit/>
+        <BsChatSquareDotsFill/>
           <span>Contact Me</span>
         </a>
 
