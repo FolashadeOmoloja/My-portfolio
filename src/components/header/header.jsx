@@ -12,11 +12,13 @@ const Header = () => {
     
     <div className="contanier header__container" id='home' >
        <div className="header__container__inner">
-        <div className="inner__text">
-        <h2 className='first'> Hello there <img src= {bitmoji} alt="" />,  </h2>
-        <h1>I'm Folashade Omoloja </h1>
-        <h2>A Front-End Developer</h2>
-        <h2>Let's talk!</h2>
+        <div className="inner_text">
+        <h1 style={{position: 'relative', fontWeight: 'bold'}}>Hi, I'm Folashade Omoloja <img src= {bitmoji} alt="" /></h1>
+        <div className='text__animate'>
+           <h2>A Front-End Developer</h2>
+        </div>
+        <p className='header-text'>I specialize in building Frontend applications. I take pride in my work and ensure I deliver the fastest, most accessible and most responsive application possible. It's not just about writing code; it's about building experiences that leave a lasting impression.</p>
+
         </div>
         <CTA></CTA>
        </div>
