@@ -220,6 +220,15 @@ animation-delay: 2.2s;
 }
 
 @media screen and (max-width: 745px) {
+  .scroll__down{
+    height: 30.3px;
+  right: -20px;
+  top:50px;
+}
+
+.header__socials{
+  left: 10px
+}
   .header__container {
     height: 80vh;
   }
@@ -241,15 +250,7 @@ animation-delay: 2.2s;
 }
 
 @media screen and (max-width: 500px) {
-  .scroll__down{
-      height: 30.3px;
-    right: -20px;
-    top:50px;
-  }
 
-  .header__socials{
-    left: 10px
-  }
   .header__container__inner {
     margin-top: 50px;
         display: flex;
