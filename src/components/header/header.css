@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   padding: 40px;
-  height: 100vh;
   font-weight: 700;
 }
 
@@ -229,9 +228,6 @@ animation-delay: 2.2s;
 .header__socials{
   left: 20px
 }
-  .header__container {
-    height: 50vh;
-  }
   .header__container h1 {
     font-size: 2rem;
   }
@@ -249,7 +245,7 @@ animation-delay: 2.2s;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
   .header__container__inner {
     margin-top: 50px;

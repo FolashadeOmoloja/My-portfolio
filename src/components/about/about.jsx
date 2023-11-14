@@ -7,7 +7,7 @@ import My_Image from '../../assets/Me.png'
 const About = () => {
 
   return (
-    <section id='about' className='section'>
+    <section id='about' className='section about__main'>
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className="container about__container " 
